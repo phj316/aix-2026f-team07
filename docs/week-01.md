@@ -16,7 +16,7 @@
 
 
 
-## 회의 규칙 / Meeting rule — 고정 회의 화요일 22:30~, 변동 회의 금 15:00~ 불참은 사유를 미리 말하기 늦어도 전날까지. 무단 불참시 팀원에게 베풀기
+## 회의 규칙 / Meeting rule — 고정 회의 화요일 22:30~, 변동 회의 금 15:00~ 수요일 13:00~ 불참은 사유를 미리 말하기 늦어도 전날까지. 무단 불참시 팀원에게 베풀기
 
 
 
@@ -28,19 +28,19 @@
 
 
 
-## 마감 규칙 / Deadline rule
+## 마감 규칙 / Deadline rule : 일요일 자정까지 업로드 해놓기
 
 
 
-## **팀 공용 언어 / Working language** — 회의 언어 / 기록 언어
+## **팀 공용 언어 / Working language** — 한국어, 기록언어 노션
 
 
 
-## AI 사용에 대한 팀 합의 / Team agreement on AI use
+## AI 사용에 대한 팀 합의 / Team agreement on AI use : 작성일 기준 다음 주
 
 
 
-## 성찰 / Reflection — 가장 걱정되는 것
+## 성찰 / Reflection — 가장 걱정되는 것 : 갈등, 친해지기
 
 
 
