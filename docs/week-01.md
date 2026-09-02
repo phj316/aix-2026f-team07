@@ -2,7 +2,7 @@
 
 **팀 규칙 세우기 / Setting team rules**
 
-- 작성일 / Date: 26.09.03
+- 작성일 / Date: 26.09.02
 - 참여자 / Present: 박현준, 손민석, 이주현, 오지현
 - 최종 반영 / Feeds into: docs/team-rules.md
 
