@@ -9,9 +9,7 @@
 
 ---
 
-## 구현할 작은 기능 / Small feature
-
-## 메모 검색 기능 추가하기
+## 구현할 작은 기능 / Small feature : 메모 검색 기능 추가하기
 
 ## 사용한 도구 / Tool used
 
