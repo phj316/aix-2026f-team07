@@ -197,7 +197,8 @@ module.exports = router;
 - GET /memos/search?q=키워드 로 호출된다
 - 제목 또는 본문에 키워드가 포함된 메모만 반환한다
 - 본인 메모만 반환한다
-- q가 비어 있으면 400과 { ok: false, error } 를 반환한다
+- q가 비어 있으면 400과 { ok: false, error } 를 반환한다   
+
 ```
 
 ```
