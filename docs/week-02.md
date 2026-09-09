@@ -11,9 +11,7 @@
 
 ## 구현할 작은 기능 / Small feature : 메모 검색 기능 추가하기
 
-## 사용한 도구 / Tool used
-
-## Gemini, Claude
+## 사용한 도구 / Tool used : Gemini, Claude
 
 ## 방식 A — 통째로 요청 / One big request 프롬프트: 메모 검색 기능 만들어줘. 제목이랑 본문에서 키워드로 찾을 수 있게. / 결과 /문제점: 로그인 개념이 없어 전체 메모에서 검색되어 남의 메모까지 다 찾아짐
 
