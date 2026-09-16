@@ -2,8 +2,8 @@
 
 **도메인 문제 발굴 / Domain problem discovery**
 
-- 작성일 / Date: 
-- 참여자 / Present: 
+- 작성일 / Date: 26.09.16
+- 참여자 / Present: 손민석, 박현준, 이주현, 오지현
 
 ---
 
