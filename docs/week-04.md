@@ -2,8 +2,8 @@
 
 **주제 선택과 요구 명세 / Choosing a problem & writing the spec**
 
-- 작성일 / Date: 
-- 참여자 / Present: 
+- 작성일 / Date: 26.9.23
+- 참여자 / Present: 박현준, 손민석, 이주현, 오지현
 
 ---
 
