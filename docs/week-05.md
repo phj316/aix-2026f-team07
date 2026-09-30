@@ -2,15 +2,15 @@
 
 **1-page 기획서 / One-page plan**
 
-- 작성일 / Date: 
-- 참여자 / Present: 
+- 작성일 / Date: 9/30
+- 참여자 / Present: 박현준, 손민석, 이주현, 오지현
 
 ---
 
 ## ① 주제 확정 / Confirm topic
 
-- 확정 주제 / Topic: 
-- 이유 / Reason: 
+- 확정 주제 / Topic: 누진세 절약 도움 서비스
+- 이유 / Reason: 복잡하고 귀찮은 관리를 대신해주며 아낄 수 있는 가이드가 필요한 자취생을 도와주기 위함.
 
 ---
 
