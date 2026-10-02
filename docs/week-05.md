@@ -2,8 +2,8 @@
 
 **1-page 기획서 / One-page plan**
 
-- 작성일 / Date: 
-- 참여자 / Present: 
+- 작성일 / Date: 26.10.2
+- 참여자 / Present: 박현준, 손민석, 이주현, 오지현
 
 ---
 
