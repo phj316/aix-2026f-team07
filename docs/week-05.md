@@ -2,7 +2,7 @@
 
 **1-page 기획서 / One-page plan**
 
-- 작성일 / Date: 26.10.2
+- 작성일 / Date: 26.10.3
 - 참여자 / Present: 박현준, 손민석, 이주현, 오지현
 
 ## ① 주제 확정 / Confirm topic
