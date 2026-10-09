@@ -163,28 +163,45 @@ module.exports = router;
 나온 것 중 쓴 것 / 버린 것: [쓴 것] 버리는 것 없이 나온 내용을 모두 사용 / [버린 것] 없음. 
 버렸다면 왜 버렸는가: 없음
 
-# 4주차
+# 5주차
 ---  
-내가 지금 AI+X 라는 과목을 진행중이야 이 과목은 팀플로 진행하고 개발을 하는거야 우리가 기획한건 공과금 납부 관련 안내인데 간단하게 요약하자면 전기, 가스 요금의 고지서를 촬영하거나 계량기를 찍으면 누진세 구간을 안내해주고 절약 방법을 간단히 안내 해주는 시스템이야 
-일단 
-① 주제 선택 / Choosing one problem
-항목 Item    내용
-선택한 주제 Chosen    자취생의 요금 폭탄을 막는 공과금 예측 및 누진세 절약 서비스
-선택 근거 Why    자취하는 대학생들이 신경쓰지 못하지만 신경쓸 경우 경제 부담을 줄여주기 좋다고 생각함.
-② 성공 기준 가져오기 / Success criteria from Week 3
-3주차 성공 기준 원문 Original (Week 3)    모호한 표현 Vague words
-계량기,고지서 확인 시 당월 예상 요금과 누진세 진입전 절약 행동 지침 파악힘    누진세 진입 전, 절약 행동 지침, 파악
-③ Acceptance Criteria
-최소 정상 경로 2개 + 실패 경로 1개. 판정 방법 칸이 비면 아직 명세가 아닙니다. At least two normal paths + one failure path. If "How to check" is empty, it is not yet a spec.
+① 주제 확정 / Confirm topic
+확정 주제 / Topic: 누진세 절약 도움 서비스
+이유 / Reason: 복잡하고 귀찮은 관리를 대신해주며 아낄 수 있는 가이드가 필요한 자취생을 도와주기 위함.
+② 태스크 분해와 의존 관계 / Tasks and dependencies
+태스크 목록 / Task list
+4주차 사용자 스토리와 완료 조건을 태스크로 나눕니다. Break down your Week 4 user stories and acceptance criteria into tasks.
 
-#    경로 Path    EARS 문장 Sentence    판정 방법 How to check
-AC-1    정상 Normal    WHEN 사용자가 계량기 수치를 수동 입력하고 [예측하기] 버튼을 누르면 THE 공과금 예측 시스템은 SHALL 3초 이내에 당월 예상 금액(원)과 현재 누진 구간(1~3단계)을 화면에 표시한다.    1. 계량기 수치(예: 210kWh) 입력 후 버튼 클릭. 2. 3초 이내에 예상 요금과 '누진 2단계' 문구가 정확히 화면에 표시되는지 확인.
-AC-2    정상 Normal    WHEN 사용자의 전력 사용량이 다음 누진 구간 기준(예: 200kWh)의 90%에 도달하면 THE 공과금 예측 시스템은 SHALL "누진세 진입 전" 알림과 함께 예상 절감액이 포함된 절약 행동 지침 3가지를 푸시 알림으로 발송한다.    1. 테스트 계정의 전력 사용량을 180kWh(90%)로 변경. 2. 모바일 앱 푸시 알림이 즉시 수신되는지 확인. 3. 알림 클릭 시 맞춤 절약 지침 3가지(예: 에어컨 1℃ 높이기 등)가 노출되는지 확인.
-AC-3    실패 Failure    IF 사용자가 전월 계량기 수치보다 작은 값이나 음수를 입력하면 THEN THE 공과금 예측 시스템은 SHALL "전월 수치보다 큰 수치를 입력해 주세요"라는 경고 문구를 입력창 하단에 붉은색으로 표시한다.    1. 전월 수치가 200kWh인 상태에서 150kWh 입력 후 확인 클릭. 2. 계산이 진행되지 않고 붉은색 에러 메시지가 즉시 노출되는지 확인.
-AC-4    실패 Failure    IF 사용자가 개별 계량기가 미설치된 주거 형태(고시원 등)를 선택하여 사용량 측정이 불가능한 경우 THEN THE 공과금 예측 시스템은 SHALL "개별 계량기가 없는 주거 환경은 요금 예측 서비스 이용이 제한됩니다"라는 안내 팝업을 표시하고 입력 절차를 중단한다.    1. 회원가입/주거 설정 단계에서 주거 유형을 '개별 계량기 없음(고시원/층별 통합 계량기)'으로 선택. 2. [계량기 입력] 화면으로 이동하지 않고 서비스 불가 안내 팝업이 노출되며, 메인 화면으로 돌아가는지 확인.
+각 태스크는 따로 끝내도 맞는지 확인할 수 있어야 합니다. 담당에 '다 같이'는 쓰지 않습니다. Each task must be checkable on its own. Do not write "everyone" as owner.
 
-이게 내용이고 채워야할 내용도 알려줄테니까 좀 작성해줘
-그러면 가스와 전기로 했을때에도 우리가 수업이 9주차가 되면 개발을 시작해서 11~12주차에는 실행이 좀 되어야 하는데 가스와 전기만으로도 우리가 하기에 무리가 없는 내용일까?
-아니면 전기만 시작해보는게 좋을까  
-(3)  
-그러면 전기에 대한 내용만 해서 week5 md 적어주고 could에 가능하면 가스에 대한 과정도 포함한다로 작성해서 다시 만들어줘  
+#	태스크 Task	완료 조건 Done when	선행 태스크 Depends on	담당 Owner
+의존 관계 그래프 / Dependency graph (DAG)
+화살표는 "앞 태스크가 끝나야 뒤 태스크를 할 수 있다"는 뜻입니다. An arrow means the first task must finish before the second can start.
+
+그리는 방법 / How to draw
+
+아래 예시에서 상자 이름을 바꾸고, 선후 관계 하나마다 화살표(-->) 줄을 하나씩 추가합니다. GitHub에서 파일을 열면 그림으로 보입니다. 미리 보려면 mermaid.live에 붙여 넣으세요. Rename the boxes and add one --> line per dependency. GitHub shows it as a diagram. Preview at mermaid.live.
+태스크 표를 AI에게 주고 "Mermaid 그래프로 바꿔 줘"라고 요청해도 됩니다. You can also give the task table to AI and ask "Convert this into a Mermaid graph."
+어려우면 종이에 그려 사진을 docs/images/에 올리고 ![DAG](images/week-05-dag.jpg)로 넣어도 됩니다. Or draw it on paper, upload the photo to docs/images/ and link it with ![DAG](images/week-05-dag.jpg).
+
+지금 착수 가능 (진입 차수 0) / Can start now (in-degree 0):
+작업 순서 (위상정렬) / Work order (topological sort):
+사이클이 있었다면 어떻게 풀었는가 / If there was a cycle, how did you fix it?:
+③ 범위 결정 / Scope
+Must — 없으면 성립 안 됨 / essential
+핵심 시나리오 1개가 끝까지 동작하는 데 필요한 것만 / Only what the core scenario needs to work end-to-end
+
+핵심 시나리오 / Core scenario:
+Should (없을 경우에는 작성하지 마세요)
+시나리오 / 절약 팁 제
+Could (없을 경우에는 작성하지 마세요)
+시나리오 / 월마다 평균 사용량 추이
+Won't — 이번 학기에 안 함 / not this semester
+Won't 항목 Item	포기한 이유 Why
+실행 가능성 확인 / Feasibility check
+특수 장비·유료 API·실제 개인정보가 필요한가? 필요하다면 대안은? Does it need special hardware, paid APIs or real personal data? If so, what is the alternative?
+15주차에 발표장에서 시연할 수 있는 형태인가? Can it be demonstrated live in Week 15?
+④ 가장 먼저 동작시킬 흐름 (Walking Skeleton) / First end-to-end flow
+예 / Example: 과제 ID를 입력하면 → LMS에서 제출 기록을 받아 와서 → 화면에 제출 인원 숫자 하나가 뜬다
+
+[무엇을 입력하면] → [무엇을 처리해서] → [화면에 무엇이 나온다]
