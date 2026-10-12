@@ -1,0 +1,47 @@
+{
+  "name": "한국전력공사 주택용 전력(저압) 요금표",
+  "source": "한국전력공사 전기요금표 (2023-05-16 시행, 2026년 현재 동결)",
+  "currency": "KRW",
+  "seasons": {
+    "summer": {
+      "label": "하계",
+      "months": [7, 8],
+      "stages": [
+        { "stage": 1, "min_kwh": 0,   "max_kwh": 300,  "base_fee": 910,  "rate_per_kwh": 120.0 },
+        { "stage": 2, "min_kwh": 301, "max_kwh": 450,  "base_fee": 1600, "rate_per_kwh": 214.6 },
+        { "stage": 3, "min_kwh": 451, "max_kwh": null, "base_fee": 7300, "rate_per_kwh": 307.3 }
+      ]
+    },
+    "other": {
+      "label": "기타 계절",
+      "months": [1, 2, 3, 4, 5, 6, 9, 10, 11, 12],
+      "stages": [
+        { "stage": 1, "min_kwh": 0,   "max_kwh": 200,  "base_fee": 910,  "rate_per_kwh": 120.0 },
+        { "stage": 2, "min_kwh": 201, "max_kwh": 400,  "base_fee": 1600, "rate_per_kwh": 214.6 },
+        { "stage": 3, "min_kwh": 401, "max_kwh": null, "base_fee": 7300, "rate_per_kwh": 307.3 }
+      ]
+    }
+  },
+  "super_user": {
+    "description": "하계(7~8월)·동계(12~2월) 1,000kWh 초과분에 적용",
+    "months": [7, 8, 12, 1, 2],
+    "threshold_kwh": 1000,
+    "rate_per_kwh": 736.2
+  },
+  "surcharges": {
+    "climate_environment_fee_per_kwh": 9.0,
+    "fuel_cost_adjustment_per_kwh": 5.0,
+    "note": "연료비조정요금은 분기마다 고시되므로 분기 시작 시 한전 공지로 값을 확인할 것"
+  },
+  "taxes": {
+    "vat_rate": 0.10,
+    "power_fund_rate": 0.027,
+    "note": "전력산업기반기금 요율: 3.7% → 3.2%(2024-07) → 2.7%(2025-07)"
+  },
+  "rounding": {
+    "energy_fee": "원 미만 절사",
+    "vat": "원 미만 반올림",
+    "power_fund": "10원 미만 절사",
+    "total": "10원 미만 절사"
+  }
+}
