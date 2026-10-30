@@ -2,8 +2,8 @@
 
 **개발 착수 / Starting development**
 
-- 작성일 / Date: 
-- 참여자 / Present: 
+- 작성일 / Date: 26.10.30
+- 참여자 / Present: 박현준, 손민석, 오지현, 이주현
 
 ---
 
